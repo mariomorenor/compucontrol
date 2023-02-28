@@ -6,7 +6,7 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 
 Vue.use(Buefy, {
-  defaultIconComponent: "fa",
+  defaultIconComponent: "fa-icon",
   defaultIconPack: "fas"
 })
 
