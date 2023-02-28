@@ -3,6 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.12.16
   '@babel/eslint-parser': ^7.12.16
+  '@fortawesome/fontawesome-svg-core': ^1.2.31
+  '@fortawesome/free-solid-svg-icons': ^5.15.0
+  '@fortawesome/vue-fontawesome': ^2.0.0
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-plugin-eslint': ~5.0.0
   '@vue/cli-plugin-router': ~5.0.0
@@ -14,10 +17,14 @@ specifiers:
   eslint-plugin-vue: ^8.0.3
   vue: ^2.6.14
   vue-cli-plugin-electron-builder: ~2.1.1
+  vue-cli-plugin-fontawesome: ~0.3.1
   vue-router: ^3.5.1
   vue-template-compiler: ^2.6.14
 
 dependencies:
+  '@fortawesome/fontawesome-svg-core': 1.2.36
+  '@fortawesome/free-solid-svg-icons': 5.15.4
+  '@fortawesome/vue-fontawesome': 2.0.10_dh3wzfumpzw6zsszdpw5cxouqy
   core-js: 3.29.0
   vue: 2.7.14
   vue-router: 3.6.5_vue@2.7.14
@@ -34,6 +41,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-plugin-vue: 8.7.1_eslint@7.32.0
   vue-cli-plugin-electron-builder: 2.1.1
+  vue-cli-plugin-fontawesome: 0.3.1
   vue-template-compiler: 2.7.14
 
 packages:
@@ -1343,6 +1351,38 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fortawesome/fontawesome-common-types/0.2.36:
+    resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/fontawesome-svg-core/1.2.36:
+    resolution: {integrity: sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 0.2.36
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons/5.15.4:
+    resolution: {integrity: sha512-JLmQfz6tdtwxoihXLg6lT78BorrFyCf59SAwBM6qV/0zXyVeDygJVb3fk+j5Qat+Yvcxp1buLTY5iDh1ZSAQ8w==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 0.2.36
+    dev: false
+
+  /@fortawesome/vue-fontawesome/2.0.10_dh3wzfumpzw6zsszdpw5cxouqy:
+    resolution: {integrity: sha512-OTETSXz+3ygD2OK2/vy82cmUBpuJqeOAg4gfnnv+f2Rir1tDIhQg026Q3NQxznq83ZLz8iNqGG9XJm26inpDeg==}
+    peerDependencies:
+      '@fortawesome/fontawesome-svg-core': ~1 || ~6
+      vue: ~2
+    dependencies:
+      '@fortawesome/fontawesome-svg-core': 1.2.36
+      vue: 2.7.14
+    dev: false
 
   /@gar/promisify/1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -9980,6 +10020,10 @@ packages:
       - supports-color
       - webpack-cli
       - webpack-command
+    dev: true
+
+  /vue-cli-plugin-fontawesome/0.3.1:
+    resolution: {integrity: sha512-JXh4p2MgCvqBvZzmYDFJeLnwSBgpcWBptWokTz9WYiI3Ioj6zK2iIJZmm9leYJIJva7Zsq+5I+ZZJZhHghGo+Q==}
     dev: true
 
   /vue-eslint-parser/8.3.0_eslint@7.32.0:
