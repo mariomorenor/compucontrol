@@ -10,12 +10,14 @@ specifiers:
   '@vue/cli-plugin-eslint': ~5.0.0
   '@vue/cli-plugin-router': ~5.0.0
   '@vue/cli-service': ~5.0.0
+  buefy: ^0.9.0
   core-js: ^3.8.3
   electron: ^13.0.0
   electron-devtools-installer: ^3.1.0
   eslint: ^7.32.0
   eslint-plugin-vue: ^8.0.3
   vue: ^2.6.14
+  vue-cli-plugin-buefy: ~0.3.8
   vue-cli-plugin-electron-builder: ~2.1.1
   vue-cli-plugin-fontawesome: ~0.3.1
   vue-router: ^3.5.1
@@ -25,6 +27,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/vue-fontawesome': 2.0.10_dh3wzfumpzw6zsszdpw5cxouqy
+  buefy: 0.9.22_vue@2.7.14
   core-js: 3.29.0
   vue: 2.7.14
   vue-router: 3.6.5_vue@2.7.14
@@ -40,6 +43,7 @@ devDependencies:
   electron-devtools-installer: 3.2.0
   eslint: 7.32.0
   eslint-plugin-vue: 8.7.1_eslint@7.32.0
+  vue-cli-plugin-buefy: 0.3.8
   vue-cli-plugin-electron-builder: 2.1.1
   vue-cli-plugin-fontawesome: 0.3.1
   vue-template-compiler: 2.7.14
@@ -3269,6 +3273,16 @@ packages:
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
 
+  /buefy/0.9.22_vue@2.7.14:
+    resolution: {integrity: sha512-rA9Bf7+2lZupL1PlQU60o7cc0Og4MRz9it5LZlKOIwPENM1uEOjH48EFnNFniLyxIcz6vln0EicS96GsVCFx1Q==}
+    engines: {node: '>= 4.0.0', npm: '>= 3.0.0'}
+    peerDependencies:
+      vue: ^2.6.11
+    dependencies:
+      bulma: 0.9.4
+      vue: 2.7.14
+    dev: false
+
   /buffer-alloc-unsafe/1.1.0:
     resolution: {integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==}
     dev: true
@@ -3353,6 +3367,10 @@ packages:
   /builtin-status-codes/3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
     dev: true
+
+  /bulma/0.9.4:
+    resolution: {integrity: sha512-86FlT5+1GrsgKbPLRRY7cGDg8fsJiP/jzTqXXVqiUZZ2aZT8uemEOHlU1CDU+TxklPEZ11HZNNWclRBBecP4CQ==}
+    dev: false
 
   /bytes/3.0.0:
     resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
@@ -9990,6 +10008,10 @@ packages:
 
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
+    dev: true
+
+  /vue-cli-plugin-buefy/0.3.8:
+    resolution: {integrity: sha512-19tRQuNle2OF4BaYG9d69ysb2kgSzg32DrcEwNRzYtt7uQnTdYRJ6QtiTpBcEDvQamspLrPtCIu4Nmm0DsnJcA==}
     dev: true
 
   /vue-cli-plugin-electron-builder/2.1.1:
